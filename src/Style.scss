@@ -1,0 +1,213 @@
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+
+.clip-container {
+    background-color: #184C99;
+}
+
+.active {
+    color: #000;
+}
+
+.col-row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transition: all 500ms ease;
+    &:hover {
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        transform: scale(1.1);
+    }
+    .icon {
+        font-size: 50px;
+    }
+}
+
+.col-col {
+    transition: all 500ms ease;
+    &:hover {
+        background-color: rgba($color: #000000, $alpha: 0.2);
+        transform: scale(1.05);
+    }
+}
+
+.container {
+    .title {
+        span {
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(50deg, #f04e61, #7c40b9);
+        }
+    }
+    .steps {
+        .step {
+            width: 250px;
+            color: #fff;
+            height: 50px;
+            border-radius: 10px;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 500ms ease;
+            background-color: rgba($color: #000000, $alpha: 1.0);
+            &:hover {
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                transform: scale(1.1);
+            }
+            span {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+#basic-navbar-nav {
+    color: #fff;
+}
+
+.register {
+    width: 100%;
+    height: 100%;
+    background-color: #184C99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register__container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.dashboard {
+    width: 100%;
+    height: 100%;
+    background-color: #184C99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard__container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.login {
+    width: 100%;
+    height: 100%;
+    background-color: #184C99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.reset {
+    width: 100%;
+    height: 100%;
+    background-color: #184C99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset__container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 40%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}

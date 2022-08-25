@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+      "baseUrl": "src"
+    },
+    "include": ["src", "d:/questionnaire/src/store", "c:/Users/Kirill/Desktop/copy/firebase-auth-article/src/index.js"]
+  }
